@@ -3,6 +3,7 @@
 
 ### ShriyanYamali.github.io
 #### Made by Shriyan Yamali. 
+#### Code for a tool that generates diagrams representing legal principles and their forces.
 
 Contact me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=srujanshriyan@gmail.com">srujanshriyan@gmail.com</a> or visit my website at <a href="https://shriyanyamali.github.io/">https://shriyanyamali.github.io/</a>
 
