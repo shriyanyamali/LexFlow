@@ -1,119 +1,160 @@
 import matplotlib.pyplot as plt
-import matplotlib.patches as patches
+import numpy as np
 
-# Function to get valid integer input
-def get_valid_integer(prompt, min_value=None, max_value=None):
-    while True:
-        try:
-            value = int(input(prompt))
-            if (min_value is None or value >= min_value) and (max_value is None or value <= max_value):
-                return value
-            else:
-                print(f"Please enter a value between {min_value} and {max_value}.")
-        except ValueError:
-            print("Please enter a valid integer.")
-
-# Function to get valid float input within a specified range
-def get_valid_float(prompt, min_value, max_value):
-    while True:
-        try:
-            value = float(input(prompt))
-            if min_value <= value <= max_value:
-                return value
-            else:
-                print(f"Please enter a value between {min_value} and {max_value}.")
-        except ValueError:
-            print(f"Please enter a valid number between {min_value} and {max_value}.")
-
-# Function to get valid string input from a list of options
-def get_valid_option(prompt, options):
-    while True:
-        value = input(prompt).lower()
-        if value in options:
-            return value
-        else:
-            print(f"Please enter one of the following: {', '.join(options)}")
-
-# Function to calculate area of an arrow
-def calculate_arrow_area(width, height):
-    return width * height
-
-# Main function to create the diagram
-def create_diagram():
-    # Getting user inputs
+def get_user_input():
+    # Prompt user to enter the Act-type
     act_type = input("Enter the Act-type: ")
-    num_principles = get_valid_integer("Enter the number of principles: ", 1)
-
-    arrows = []
-    total_prohibited_area = 0
-    total_not_prohibited_area = 0
-
-    for i in range(num_principles):
-        principle_name = input(f"Enter the name of principle {i+1}: ")
-        legal_status = get_valid_option(f"Enter the legal status of principle {i+1} (prohibited/invalid/not immune/not prohibited/valid/immune): ",
-                                        ["prohibited", "invalid", "not immune", "not prohibited", "valid", "immune"])
-        relative_importance = get_valid_float(f"Enter the relative importance of principle {i+1} (0.5-3.0): ", 0.5, 3.0)
-        activation_percentage = get_valid_integer(f"Enter the percentage of activation of principle {i+1} (0-100): ", 0, 100)
-
-        width = relative_importance * 3  # Scaling up the arrow width
-        height = activation_percentage / 100 * 30  # Scaling up the arrow height
-
-        arrow = {
-            "name": principle_name,
-            "status": legal_status,
-            "width": width,
-            "height": height
-        }
-
-        if legal_status in ["prohibited", "invalid", "not immune"]:
-            total_prohibited_area += calculate_arrow_area(width, height)
+    
+    # Prompt user to enter heading 1
+    heading1 = input("Enter heading 1: ")
+    
+    while True:
+        # Prompt user to enter heading 2
+        heading2 = input("Enter heading 2: ")
+        if heading2 == heading1:
+            # Ensure heading 2 is not the same as heading 1
+            print("The headings cannot be the same. Please enter different text for heading 2.")
         else:
-            total_not_prohibited_area += calculate_arrow_area(width, height)
-
-        arrows.append(arrow)
-
-    # Calculating the position of the circle
-    position_shift = total_not_prohibited_area - total_prohibited_area
-
-    # Plotting the diagram
-    fig, ax = plt.subplots(figsize=(10, 10))  # Smaller window size
-
-    # Drawing the T table structure
-    ax.plot([-100, 100], [60, 60], color='black', linewidth=1)  # Moved x-axis further up
-    ax.plot([0, 0], [-100, 100], color='black', linewidth=1)
-    ax.text(-50, 90, 'Not Prohibited', fontsize=16, va='center', ha='center')
-    ax.text(50, 90, 'Prohibited', fontsize=16, va='center', ha='center')
-
-    # Drawing the circle
-    circle_radius = 5
-    circle = patches.Circle((position_shift, 40), circle_radius, edgecolor='black', facecolor='grey')
-    ax.add_patch(circle)
-    ax.text(position_shift, 40, act_type, fontsize=12, va='center', ha='center')
-
-    # Drawing the arrows
-    y_offset = 55  # Starting close to the new x-axis position and moving down
-    for i, arrow in enumerate(arrows):
-        if arrow['status'] in ["prohibited", "invalid", "not immune"]:
-            x_start = -95
-            x_end = x_start + arrow['height']
-        else:
-            x_start = 95
-            x_end = x_start - arrow['height']
+            break
+    
+    principles = []  # List to store principles
+    
+    while True:
+        # Prompt user to enter the name of the principle
+        name = input(f"Enter the name of the principle: ")
         
-        y_position = y_offset - i * 12  # Increasing the distance between arrows
+        while True:
+            # Prompt user to enter the legal status of the principle
+            legal_status = input(f"Enter the legal status of the principle (either '{heading1}' or '{heading2}'): ")
+            if legal_status in [heading1, heading2]:
+                break
+            else:
+                # Ensure the legal status is either heading 1 or heading 2
+                print(f"Please enter either '{heading1}' or '{heading2}'.")
+        
+        while True:
+            try:
+                # Prompt user to enter the relative importance of the principle
+                importance = float(input(f"Enter the relative importance of the principle: "))
+                break
+            except ValueError:
+                # Ensure the importance is a valid number
+                print("Please enter a valid number.")
+        
+        while True:
+            try:
+                # Prompt user to enter the percentage of activation of the principle
+                activation = float(input(f"Enter the percentage of activation of the principle (0-100): "))
+                if 0 <= activation <= 100:
+                    break
+                else:
+                    # Ensure the activation is a number between 0 and 100
+                    print("Please enter a number between 0 and 100.")
+            except ValueError:
+                # Ensure the activation is a valid number
+                print("Please enter a valid number.")
+        
+        # Append the principle details to the list
+        principles.append({
+            'name': name,
+            'legal_status': legal_status,
+            'importance': importance,
+            'activation': activation
+        })
+        
+        # Ask if the user wants to add another principle
+        another = input("Would you like to add another principle (yes or no)? ").strip().lower()
+        if another != 'yes':
+            break
+    
+    # Return the collected user inputs
+    return act_type, heading1, heading2, principles
 
-        if abs(position_shift - x_start) < circle_radius:
-            y_position -= 5  # Adjust y position to avoid overlap
+def calculate_area(importance, activation):
+    width = 0.04 * importance  # Width of the arrow shaft based on importance
+    length = 0.55 * activation / 100  # Length of the arrow shaft based on activation percentage
+    shaft_area = width * length  # Area of the arrow shaft
+    
+    head_width = width * 1.8  # Width of the arrow head slightly wider than the shaft
+    head_length = 0.02  # Length of the arrow head
+    head_area = 0.5 * head_width * head_length  # Area of the arrow head
+    
+    total_area = shaft_area + head_area  # Total area of the arrow (shaft + head)
+    return total_area, width, length, head_width  # Return total area, width, length, and head_width
 
-        ax.arrow(x_start, y_position, x_end - x_start, 0, head_width=3, head_length=3, fc='blue', ec='blue', width=arrow['width']/10)
-        ax.text((x_start + x_end) / 2, y_position, arrow['name'], fontsize=12, va='center', ha='center')
+def calculate_y_positions(n):
+    y_positions = [0.5]  # Start at the center
+    step = 0.2  # Step size for vertical positioning
 
-    ax.set_xlim(-100, 100)
-    ax.set_ylim(-100, 100)
-    ax.set_aspect('equal', 'box')
-    ax.axis('off')
+    for i in range(1, n):
+        if i % 2 == 1:
+            y_positions.append(0.5 + (i // 2 + 1) * step)  # Above the center
+        else:
+            y_positions.append(0.5 - (i // 2) * step)  # Below the center
 
-    plt.show()
+    return y_positions
 
-# Run the function
-create_diagram()
+def create_diagram(act_type, heading1, heading2, principles):
+    fig, ax = plt.subplots(figsize=(12, 8))  # Create a new figure
+    
+    # Draw the headings on the left and right
+    ax.text(-0.5, 1.1, heading1, fontsize=14, ha='center')
+    ax.text(0.5, 1.1, heading2, fontsize=14, ha='center')
+    
+    # Draw the vertical line in the center
+    ax.plot([0, 0], [0, 1], color='black', linewidth=1)
+    
+    left_area = 0  # Initialize total area for arrows pointing left
+    right_area = 0  # Initialize total area for arrows pointing right
+    
+    left_principles = [p for p in principles if p['legal_status'] == heading1]
+    right_principles = [p for p in principles if p['legal_status'] == heading2]
+    
+    left_y_positions = calculate_y_positions(len(left_principles))
+    right_y_positions = calculate_y_positions(len(right_principles))
+    
+    for principle in principles:
+        # Calculate the area of each principle
+        area, width, length, head_width = calculate_area(principle['importance'], principle['activation'])
+        if principle['legal_status'] == heading1:
+            left_area += area  # Sum areas for left-pointing arrows
+        else:
+            right_area += area  # Sum areas for right-pointing arrows
+    
+    # Calculate the position of the circle based on total areas
+    position = (right_area - left_area) / max(left_area + right_area, 1)
+    
+    # Draw the circle at the calculated position with increased size
+    circle = plt.Circle((position, 0.5), 0.14, color='blue', fill=True)  # Circle radius increased by 1.5 times (0.05 * 1.5 = 0.075)
+    ax.add_artist(circle)
+    ax.text(position, 0.5, act_type, fontsize=12, ha='center', va='center', color='white')
+    
+    offset = 0.3  # Define an offset value to move arrows further left or right
+    
+    for i, principle in enumerate(left_principles):
+        area, width, length, head_width = calculate_area(principle['importance'], principle['activation'])  # Unpack width, length, and head_width
+        y_position = left_y_positions[i]
+        # Draw left-pointing arrows with offset adjustment
+        start_x = -length - offset  # Move arrow further left by offset
+        ax.arrow(start_x, y_position, length, 0, width=width, head_width=head_width, head_length=0.02, fc='blue', ec='blue')
+        ax.text(start_x + length / 2, y_position + width, principle['name'], fontsize=10, ha='center')
+    
+    for i, principle in enumerate(right_principles):
+        area, width, length, head_width = calculate_area(principle['importance'], principle['activation'])  # Unpack width, length, and head_width
+        y_position = right_y_positions[i]
+        # Draw right-pointing arrows with offset adjustment
+        start_x = length + offset  # Move arrow further right by offset
+        ax.arrow(start_x, y_position, -length, 0, width=width, head_width=head_width, head_length=0.02, fc='blue', ec='blue')
+        ax.text(start_x - length / 2, y_position + width, principle['name'], fontsize=10, ha='center')
+    
+    ax.set_xlim(-1, 1)  # Set x-axis limits
+    ax.set_ylim(0, 1)  # Set y-axis limits
+    ax.set_aspect('equal')  # Ensure the aspect ratio is equal to make the circle round
+    ax.axis('off')  # Hide axes
+    plt.show()  # Display the plot
+
+if __name__ == "__main__":
+    # Get user inputs
+    act_type, heading1, heading2, principles = get_user_input()
+    # Create and display the diagram
+    create_diagram(act_type, heading1, heading2, principles)
