@@ -122,7 +122,7 @@ def create_diagram(act_type, heading1, heading2, principles):
             right_area += area  # Sum areas for right-pointing arrows
     
     # Calculate the position of the circle based on total areas
-    position = (right_area - left_area) / max(left_area + right_area, 1)
+    position = (left_area - right_area) / max(left_area + right_area, 1)
     
     # Draw the circle at the calculated position with increased size
     circle = plt.Circle((position, 0.5), 0.14, color='blue', fill=True)  # Circle radius increased by 1.5 times (0.05 * 1.5 = 0.075)
