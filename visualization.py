@@ -25,7 +25,7 @@ def get_user_input():
         
         while True:
             # Prompt user to enter the legal status of the principle
-            legal_status = input(f"Enter the legal status of the principle (either '{heading1}' or '{heading2}'): ")
+            legal_status = input(f"CASE SENSITIVE: Enter the legal status of the principle (either '{heading1}' or '{heading2}'): ")
             if legal_status in [heading1, heading2]:
                 break
             else:
