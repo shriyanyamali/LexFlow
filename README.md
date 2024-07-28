@@ -1,4 +1,4 @@
-[![Maintenance](https://img.shields.io/maintenance/yes/2024)]
+![Maintenance](https://img.shields.io/maintenance/yes/2024)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Setup and Installation Guide
