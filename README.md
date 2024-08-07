@@ -14,8 +14,6 @@
 2. **Run the following command:** pip install matplotlib numpy
 
 
-
-### ShriyanYamali.github.io
 #### Made by Shriyan Yamali. 
 #### Code for a tool that generates diagrams representing legal principles and their forces.
 
