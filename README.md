@@ -15,7 +15,7 @@
 
 
 #### Made by Shriyan Yamali. 
-#### A program that creates diagrams based on legal principles and the relative weight and importance of aforementioned principles.
+#### A program that creates diagrams based on the relative weight and importance of legal principles and the effect of the principles on an act type.
 
 Contact me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=srujanshriyan@gmail.com">srujanshriyan@gmail.com</a> or visit my website at <a href="https://shriyanyamali.github.io/">https://shriyanyamali.github.io/</a>
 
