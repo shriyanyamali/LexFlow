@@ -4,25 +4,25 @@
 # Setup and Installation Guide
 
 ## Differences Between `lexflow-weighted.py` and `lexflow-styled.py.ipynb`
-1. File Format and Purpose
+1. **File Format and Purpose:**
 lexflow-styled.py.ipynb is a Jupyter Notebook that supports interactive code execution, user input, and dynamic visualization.
 lexflow-weighted.py is a Python script for linear execution, without direct support for interactive inputs or step-by-step execution.
-2. User Interaction
+2. **User Interaction:**
 lexflow-styled.py.ipynb uses ipywidgets for interactive input, enabling a more dynamic user experience.
 lexflow-weighted.py relies on console-based input (input()), offering less dynamic interaction.
-3. Visualization and Styling
+3. **Visualization and Styling:**
 lexflow-styled.py.ipynb uses matplotlib with custom settings for enhanced visual quality.
 lexflow-weighted.py may use matplotlib but focuses on basic, straightforward outputs.
-4. Handling of Weights and Importance of Legal Principles
+4. **Handling of Weights and Importance of Legal Principles:**
 lexflow-styled.py.ipynb does not handle the relative weights of legal principles.
 lexflow-weighted.py allows input of weights and importance, influencing the program's computations.
-5. Code Structure and Modularity
+5. **Code Structure and Modularity:**
 lexflow-styled.py.ipynb is modular, with code organized into cells for iterative development.
 lexflow-weighted.py is a single script with linear execution, less suited for iterative development.
-6. Use of Libraries
+6. **Use of Libraries:**
 lexflow-styled.py.ipynb uses libraries like ipywidgets for interactivity and enhanced display options.
 lexflow-weighted.py uses standard libraries (matplotlib, numpy) for core functionality.
-7. Intended Use Case
+7. **Intended Use Case:**
 lexflow-styled.py.ipynb is ideal for educational purposes, with interactive features and explanations.
 lexflow-weighted.py is designed for practical applications with straightforward, quick computations.
 
