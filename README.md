@@ -47,12 +47,10 @@ lexflow-weighted.py is designed for practical applications with straightforward,
 4. **Run The Following Command To Open Jupyter Notebook:** `jupyter notebook`
 5. **Using The Progam:** Click on each cell—from top to bottom—and press `Shift` + `Enter` and enter each input as prompted.
 
-#### Made by Shriyan Yamali. 
-
 Contact me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=srujanshriyan@gmail.com">srujanshriyan@gmail.com</a>
 
 Check out my website at <a href="https://shriyanyamali.github.io/">https://shriyanyamali.github.io/</a>
 
-This file was last updated on 8/22/2024.
+This file was last updated on 9/1/2024.
 
-Copyright © 2024. Shriyan Yamali All rights reserved.
+Made by Shriyan Yamali.
