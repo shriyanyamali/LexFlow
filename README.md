@@ -48,10 +48,11 @@ lexflow-weighted.py is designed for practical applications with straightforward,
 5. **Using The Progam:** Click on each cell—from top to bottom—and press `Shift` + `Enter` and enter each input as prompted.
 
 #### Made by Shriyan Yamali. 
-#### A program that creates diagrams based on the relative weight and importance of legal principles and the effect of the principles on an act type.
 
-Contact me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=srujanshriyan@gmail.com">srujanshriyan@gmail.com</a> or visit my website at <a href="https://shriyanyamali.github.io/">https://shriyanyamali.github.io/</a>
+Contact me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=srujanshriyan@gmail.com">srujanshriyan@gmail.com</a>
+
+Check out my website at <a href="https://shriyanyamali.github.io/">https://shriyanyamali.github.io/</a>
 
 This file was last updated on 8/22/2024.
 
-Copyright © 2024 Shriyan Yamali All rights reserved.
+Copyright © 2024. Shriyan Yamali All rights reserved.
