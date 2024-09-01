@@ -20,7 +20,7 @@
 2. **Run The Following Command To Install Jupyter Notebook:** `pip install notebook`
 3. **Run The Following Command To Install The Required Python Packages:** `pip install matplotlib numpy ipywidgets screeninfo`
 4. **Run The Following Command To Open Jupyter Notebook:** `jupyter notebook`
-5. **Using The Progam:** Click on each cell and press `Shift` + `Enter` and enter each input as prompted.
+5. **Using The Progam:** Click on each cell—from top to bottom—and press `Shift` + `Enter` and enter each input as prompted.
 
 #### Made by Shriyan Yamali. 
 #### A program that creates diagrams based on the relative weight and importance of legal principles and the effect of the principles on an act type.
