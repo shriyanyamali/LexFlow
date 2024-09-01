@@ -11,20 +11,20 @@
 - lexflow-styled.py.ipynb uses ipywidgets for interactive input, enabling a more dynamic user experience. <br>
 - lexflow-weighted.py relies on console-based input (input()), offering less dynamic interaction. <br>
 3. **Visualization and Styling:**
-lexflow-styled.py.ipynb uses matplotlib with custom settings for enhanced visual quality.
-lexflow-weighted.py may use matplotlib but focuses on basic, straightforward outputs.
-4. **Handling of Weights and Importance of Legal Principles:**
-lexflow-styled.py.ipynb does not handle the relative weights of legal principles.
-lexflow-weighted.py allows input of weights and importance, influencing the program's computations.
-5. **Code Structure and Modularity:**
-lexflow-styled.py.ipynb is modular, with code organized into cells for iterative development.
-lexflow-weighted.py is a single script with linear execution, less suited for iterative development.
-6. **Use of Libraries:**
-lexflow-styled.py.ipynb uses libraries like ipywidgets for interactivity and enhanced display options.
-lexflow-weighted.py uses standard libraries (matplotlib, numpy) for core functionality.
-7. **Intended Use Case:**
-lexflow-styled.py.ipynb is ideal for educational purposes, with interactive features and explanations.
-lexflow-weighted.py is designed for practical applications with straightforward, quick computations.
+- lexflow-styled.py.ipynb uses matplotlib with custom settings for enhanced visual quality. <br>
+- lexflow-weighted.py may use matplotlib but focuses on basic, straightforward outputs. <br>
+4. **Handling of Weights and Importance of Legal Principles:** <br>
+- lexflow-styled.py.ipynb does not handle the relative weights of legal principles. <br>
+- lexflow-weighted.py allows input of weights and importance, influencing the program's computations. <br>
+5. **Code Structure and Modularity:** <br>
+- lexflow-styled.py.ipynb is modular, with code organized into cells for iterative development. <br>
+- lexflow-weighted.py is a single script with linear execution, less suited for iterative development. <br>
+6. **Use of Libraries:** <br>
+- lexflow-styled.py.ipynb uses libraries like ipywidgets for interactivity and enhanced display options. <br>
+- lexflow-weighted.py uses standard libraries (matplotlib, numpy) for core functionality. <br>
+7. **Intended Use Case:** <br>
+- lexflow-styled.py.ipynb is ideal for educational purposes, with interactive features and explanations. <br>
+- lexflow-weighted.py is designed for practical applications with straightforward, quick computations. <br>
 
 
 ## Downloading and Installing Python
