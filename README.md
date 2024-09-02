@@ -45,9 +45,9 @@
 2. **Run The Following Command To Install Jupyter Notebook:** `pip install notebook`
 3. **Run The Following Command To Install The Required Python Packages:** `pip install matplotlib numpy ipywidgets screeninfo`
 4. **Run The Following Command To Open Jupyter Notebook:** `jupyter notebook`
-5. **Using The Progam:** Click on each cell—from top to bottom—and press `Shift` + `Enter` and enter each input as prompted.
+5. **Using The Program:** Click on each cell—from top to bottom—and press `Shift` + `Enter` and enter each input as prompted.
 
-This code has been tested with Python 3.12.2. Compatibility with other versions cannot be guarenteed.
+This code has been tested with Python 3.12.2. Compatibility with other versions cannot be guaranteed.
 
 Contact me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=srujanshriyan@gmail.com">srujanshriyan@gmail.com</a>
 
