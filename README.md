@@ -40,7 +40,7 @@
 2. **Run The Following Command To Install The Required Python Packages:** `pip install matplotlib numpy`
 3. **Using The Program:** Run the program in the terminal and enter each input as prompted. Do not run the program using Command Prompt or Powershell as the diagram will not be visualized. 
 
-## lexflow-styled.py.ipynb - Continued Setup
+## lexflow-styled.ipynb - Continued Setup
 1. **Open Command Prompt:** Press `Win + R`, type `cmd`, and press `Enter`.
 2. **Run The Following Command To Install Jupyter Notebook:** `pip install notebook`
 3. **Run The Following Command To Install The Required Python Packages:** `pip install matplotlib numpy ipywidgets screeninfo`
