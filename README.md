@@ -53,6 +53,6 @@ Contact me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=srujanshriy
 
 Check out my website at <a href="https://shriyanyamali.tech/">https://shriyanyamali.tech/</a>
 
-This file was last updated on 9/1/2024.
+This file was last updated on 10/4/2024.
 
 Made by Shriyan Yamali.
