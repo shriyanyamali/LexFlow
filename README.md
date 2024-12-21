@@ -3,7 +3,7 @@
 
 # Setup and Installation Guide
 
-Lexflow is a program that uses user selected principles and determines there effect on an act type. The principle may change a legal conclusion or idea (act type) position on a chart, either moving it towards or against a side. 
+Lexflow is a program that uses user selected principles and determines there effect on an act type. The principle may change a legal conclusion or idea (act type) position on a chart, either moving it towards or against a side.
 
 ## Differences Between lexflow-weighted.py and lexflow-styled.py.ipynb
 
@@ -68,10 +68,10 @@ Lexflow is a program that uses user selected principles and determines there eff
 
 This code has been tested with Python 3.12.2. Compatibility with other versions cannot be guaranteed.
 
-Contact me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=srujanshriyan@gmail.com">srujanshriyan@gmail.com</a>
+Contact me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shriyansyamali@gmail.com">shriyansyamali@gmail.com</a>
 
 Check out my website at <a href="https://shriyanyamali.github.io/">https://shriyanyamali.github.io/</a>
 
-This file was last updated on 12/2/2024.
+This file was last updated on 12/20/2024.
 
 Made by Shriyan Yamali.
