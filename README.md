@@ -72,6 +72,6 @@ Contact me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yamalishriy
 
 Check out my website at <a href="https://shriyanyamali.github.io/">https://shriyanyamali.github.io/</a>
 
-This file was last updated on 1/22/2024.
+This file was last updated on 1/11/2025.
 
 Made by Shriyan Yamali.
