@@ -1,4 +1,4 @@
-![Maintenance](https://img.shields.io/maintenance/no/2024)
+![Maintenance](https://img.shields.io/maintenance/no/2025)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Setup and Installation Guide
@@ -72,6 +72,6 @@ Contact me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yamalishriy
 
 Check out my website at <a href="https://shriyanyamali.github.io/">https://shriyanyamali.github.io/</a>
 
-This file was last updated on 12/20/2024.
+This file was last updated on 1/22/2024.
 
 Made by Shriyan Yamali.
