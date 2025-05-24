@@ -37,7 +37,7 @@ Here, we see that the act type (religious freedoms) is more not prohibited than 
 
 This code has been tested with Python 3.12.2. Compatibility with other versions cannot be guaranteed.
 
-Contact me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yamalishriyan@gmail.com">yamalishriyan@gmail.com</a>
+Questions? Contact me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yamalishriyan@gmail.com">yamalishriyan@gmail.com</a>
 
 Check out my website at <a href="https://shriyanyamali.github.io/">https://shriyanyamali.github.io/</a>
 
