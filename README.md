@@ -1,6 +1,12 @@
 ![Maintenance](https://img.shields.io/maintenance/no/2025)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+NOTICE:
+
+May 2025
+
+Starting this year, I will not be updating this repository. I might make sporadic updates to the README file but the Python code will not be updated.
+
 # Setup and Installation Guide
 
 Lexflow is a program that uses user-selected principles and determines their effect on an act type. The principle may change a legal conclusion or idea (act type) position on a chart, either moving it towards or against a side.
