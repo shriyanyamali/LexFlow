@@ -13,7 +13,7 @@ Lexflow is a program that uses user-selected principles and determines their eff
 
 ## Example Output
 
-![Image failed to load](https://www.shriyanyamali.tech/images/projects/lexflow.png)
+![Image failed to load](https://www.shriyanyamali.tech/projects/lexflow.png)
 
 Here, we see that the act type (religious freedoms) is more not prohibited than prohibited based on the provided principles (secularism, first amendment, etc.). The larger the width of the arrow (compare Church-State to pluralism), the greater the weight (impact). Those values are user-inputted, and then calculated using a formula to determine the relative weight compared to the other principles. This moves the act type accordingly to represent the relative change based on the cause-and-effect relationship between the act type and each principle. This specific example shows that religious freedoms are "not prohibited" or in this context, preserved, after deducting the negative implications of a lack of separation of church and state and secularism from the freedoms provided through the first amendment and promoted through pluralism.
 
