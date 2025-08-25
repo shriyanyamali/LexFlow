@@ -45,7 +45,7 @@ This code has been tested with Python 3.12.2. Compatibility with other versions 
 
 Questions? Contact me at <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yamalishriyan@gmail.com">yamalishriyan@gmail.com</a>
 
-Check out my website at <a href="https://shriyanyamali.com/">https://shriyanyamali.com/</a>
+Check out my website at <a href="https://shriyanyamali.com/">shriyanyamali.com</a>
 
 This file was last updated on 7/7/2025.
 
